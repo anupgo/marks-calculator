@@ -2,17 +2,15 @@ package com.company;
 import java.util.Scanner;
 
 
-public class javatrytodomethord {
-
-    public static class subject{
+public  class javatrytodomethord {
 
 
-    }
-
+    static boolean isPassed=true;
     static void pass(int sub){
 
         if (sub<33) {
             System.out.println("failed");
+            isPassed = false;
         }
         else {
             System.out.println("Passed");
@@ -33,7 +31,7 @@ public class javatrytodomethord {
 
         // Subject 3
 
-        System.out.print("Enter your subject 3 number out of 100 :");
+        System.out.print("Enter youjavr subject 3 number out of 100 :");
         int  sub3= sc.nextInt();
         pass(sub3);
 
@@ -60,14 +58,16 @@ public class javatrytodomethord {
         System.out.println("Your percentage is : " + per + "%");
 
         // over all pass/fail
-        if(sum >=165){
-            System.out.println("You have passed in all subjects");
+        if(isPassed){
+            System.out.println("You have passed in all Subjects");
         }
         else {
             System.out.println("try again you are fail");
         }
 
-        //overall pass or fall
+       
+
+
 
 
 
