@@ -61,7 +61,7 @@ public class javatrytodomethord {
 
         // over all pass/fail
         if(sum >=165){
-            System.out.println("You have passed");
+            System.out.println("You have passed in all subjects");
         }
         else {
             System.out.println("try again you are fail");
